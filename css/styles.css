@@ -1,0 +1,83 @@
+:root {
+  /* Primary colors */
+  -soft-red: #fe7867;
+  -yellow: #fad400;
+  -dark-cyan: #25564b; /* graphic design text */
+  -dark-blue: #19536b; /* photography text */
+  -dark-moderate-cyan: #458c7e; /* footer */
+
+  /* Neutral */
+  -very-dark-blue: #23303e;
+  -very-dark-grayish-blue: #5a636c;
+  -dark-grayish-blue: #818498;
+  -grayish-blue: #a7abae;
+  -white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+}
+
+/* Nav */
+
+/* Hero */
+section > .creative {
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.title {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+}
+
+.hero-title {
+  letter-spacing: 0.25rem;
+  font-size: 4.5rem;
+  font-style: normal;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.small-title {
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* testimonials */
+.uppercase {
+  text-transform: uppercase;
+}
+.testimonials-img {
+  border-radius: 5rem;
+  width: 50px;
+}
+
+/* footer */
+
+footer .socials {
+  background-color: var(-dark-moderate-cyan);
+  color: var(-dark-cyan);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
