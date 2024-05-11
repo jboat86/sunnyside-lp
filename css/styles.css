@@ -1,19 +1,31 @@
 :root {
   /* Primary colors */
-  -soft-red: #fe7867;
-  -yellow: #fad400;
-  -dark-cyan: #25564b; /* graphic design text */
-  -dark-blue: #19536b; /* photography text */
-  -dark-moderate-cyan: #458c7e; /* footer */
+  --soft-red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --dark-cyan: hsl(167, 40%, 24%); /* graphic design text */
+  --dark-blue: hsl(198, 62%, 26%); /* photography text */
+  --dark-moderate-cyan: hsl(168, 34%, 41%); /* footer */
 
   /* Neutral */
-  -very-dark-blue: #23303e;
-  -very-dark-grayish-blue: #5a636c;
-  -dark-grayish-blue: #818498;
-  -grayish-blue: #a7abae;
-  -white: #ffffff;
+  --very-dark-blue: hsl(211, 28%, 19%);
+  --very-dark-grayish-blue: hsl(210, 9%, 39%);
+  --dark-grayish-blue: hsl(232, 10%, 55%);
+  --grayish-blue: hsl(206, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
 }
 
+/* Utility classes */
+
+.title {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+}
+
+.small-title {
+  font-weight: 900;
+}
+
+/* start */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -25,37 +37,69 @@ body {
   font-weight: 600;
 }
 
-/* Nav */
-
-/* Hero */
-section > .creative {
-  height: 100vh;
+header {
+  display: flex;
+  height: 100%;
   width: 100%;
-  background-position: center;
-  background-size: cover;
+  /* border: solid 2px green; */
   position: relative;
 }
 
-.title {
-  font-family: "Fraunces", serif;
-  font-weight: 900;
+/* Nav */
+
+.navbar-brand {
+  color: var(--white);
+  font-size: 2rem;
+}
+
+button.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  color: red;
+}
+
+.overlay {
+  height: 450px;
+  width: 450px;
+  position: absolute;
+  /* top: 25%; */
+  left: 50%;
+  transform: translate(-50%, -15%);
+  background-color: var(--white);
+  border: solid 2px violet;
+}
+
+ul li .nav-link {
+  display: flex;
+  justify-content: center;
+  color: var(--dark-grayish-blue);
+  font-size: 1.5rem;
+  padding-top: 3.15rem;
+}
+
+/* Hero */
+.creative {
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
-  letter-spacing: 0.25rem;
+  color: var(--white);
+  letter-spacing: 0.5rem;
   font-size: 4.5rem;
-  font-style: normal;
   text-align: center;
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+  transform: translate(-50%, -30%);
 }
-
-.small-title {
-  font-weight: 900;
-  font-style: normal;
+.arrow {
+  position: absolute;
+  top: 55%;
+  right: 45%;
+  height: 20%;
 }
 
 /* testimonials */
