@@ -11,37 +11,42 @@
   --very-dark-grayish-blue: hsl(210, 9%, 39%);
   --dark-grayish-blue: hsl(232, 10%, 55%);
   --grayish-blue: hsl(206, 4%, 67%);
-  --white: hsl(0, 0%, 100%);
+  --white: rgb(255, 255, 255);
 }
 
 /* Utility classes */
 
-.title {
+.cta-title {
   font-family: "Fraunces", serif;
+  color: var(--very-dark-blue);
   font-weight: 700;
+  font-size: 3rem;
 }
 
-.small-title {
-  font-weight: 900;
+.uppercase {
+  text-transform: uppercase;
 }
 
-/* start */
+.cta-padding {
+  padding: 3rem;
+}
+
+/* Project start */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
+html,
 body {
+  height: 100%;
   font-family: "Barlow", sans-serif;
   font-weight: 600;
+  color: var(--very-dark-grayish-blue);
+  overflow-x: hidden;
 }
 
 header {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  /* border: solid 2px green; */
   position: relative;
 }
 
@@ -56,37 +61,66 @@ button.navbar-toggler {
   border: none;
 }
 
-.navbar-toggler-icon {
-  color: red;
-}
-
 .overlay {
-  height: 450px;
-  width: 450px;
+  position: fixed;
+  padding: 2rem;
+  margin-top: 10.75rem;
+  height: 500px;
+  width: 500px;
   position: absolute;
-  /* top: 25%; */
+  top: 15%;
   left: 50%;
   transform: translate(-50%, -15%);
   background-color: var(--white);
-  border: solid 2px violet;
 }
 
-ul li .nav-link {
+.triangle {
+  position: absolute;
+  right: 6.72rem;
+  width: 0.5px;
+  height: 25px;
+  border-top: 30px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 40px solid var(--white);
+  rotate: -90deg;
+}
+
+/* Overlay navbar*/
+ul li {
   display: flex;
   justify-content: center;
-  color: var(--dark-grayish-blue);
-  font-size: 1.5rem;
-  padding-top: 3.15rem;
 }
 
-/* Hero */
+.nav-link {
+  color: var(--dark-grayish-blue);
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+
+.contact {
+  background-color: var(--yellow);
+  border-radius: 100px;
+  margin: 0 6rem 2rem 6rem;
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+}
+
+.contact:hover {
+  color: var(--very-dark-grayish-blue);
+}
+
+/* Navbar end */
+
+/* Hero start */
 .creative {
   background-position: center;
   background-size: cover;
 }
 
 .hero-title {
+  font-family: "Fraunces", serif;
   color: var(--white);
+  font-weight: 700;
   letter-spacing: 0.5rem;
   font-size: 4.5rem;
   text-align: center;
@@ -102,16 +136,33 @@ ul li .nav-link {
   height: 20%;
 }
 
-/* testimonials */
-.uppercase {
+/* Hero end*/
+
+/* CTA start */
+
+.cta {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 2;
+}
+
+.learn-btn {
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
+
+/* CTA end */
+
+/* testimonials start */
+
 .testimonials-img {
   border-radius: 5rem;
   width: 50px;
 }
 
-/* footer */
+/* testimonials end */
+
+/* footer start */
 
 footer .socials {
   background-color: var(-dark-moderate-cyan);
@@ -125,3 +176,6 @@ footer .socials {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+/* footer end */
+
+/* Project start */
