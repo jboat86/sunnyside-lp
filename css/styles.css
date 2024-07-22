@@ -16,19 +16,8 @@
 
 /* Utility classes */
 
-.cta-title {
-  font-family: "Fraunces", serif;
-  color: var(--very-dark-blue);
-  font-weight: 700;
-  font-size: 3rem;
-}
-
 .uppercase {
   text-transform: uppercase;
-}
-
-.cta-padding {
-  padding: 3rem;
 }
 
 /* Project start */
@@ -42,7 +31,7 @@ body {
   height: 100%;
   font-family: "Barlow", sans-serif;
   font-weight: 600;
-  color: var(--very-dark-grayish-blue);
+  color: var(--dark-grayish-blue);
   overflow-x: hidden;
 }
 
@@ -142,13 +131,37 @@ ul li {
 
 .cta {
   text-align: center;
-  font-size: 1.2rem;
-  line-height: 2;
+  font-size: 1.75rem;
+  line-height: 1.75;
 }
 
+.cta-title {
+  font-family: "Fraunces", serif;
+  color: var(--very-dark-blue);
+  font-weight: 700;
+  font-size: 3.25rem;
+}
+p {
+  margin: 2rem 3rem;
+}
 .learn-btn {
   font-size: 1.5rem;
   text-transform: uppercase;
+}
+
+.banner-card {
+  position: relative;
+}
+
+.banner-title {
+  position: absolute;
+  color: var(--dark-cyan);
+  top: 20;
+}
+
+.banner-text {
+  position: absolute;
+  color: var(--dark-cyan);
 }
 
 /* CTA end */
@@ -157,7 +170,7 @@ ul li {
 
 .testimonials-img {
   border-radius: 5rem;
-  width: 50px;
+  width: 100px;
 }
 
 /* testimonials end */
