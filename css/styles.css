@@ -15,6 +15,11 @@
 }
 
 /* Utility classes */
+.center-text {
+  text-align: center;
+  font-size: 1.75rem;
+  line-height: 1.75;
+}
 
 .uppercase {
   text-transform: uppercase;
@@ -129,18 +134,13 @@ ul li {
 
 /* CTA start */
 
-.cta {
-  text-align: center;
-  font-size: 1.75rem;
-  line-height: 1.75;
-}
-
 .cta-title {
   font-family: "Fraunces", serif;
   color: var(--very-dark-blue);
   font-weight: 700;
   font-size: 3.25rem;
 }
+
 p {
   margin: 2rem 3rem;
 }
@@ -154,14 +154,6 @@ p {
 }
 
 .banner-title {
-  position: absolute;
-  color: var(--dark-cyan);
-  top: 20;
-}
-
-.banner-text {
-  position: absolute;
-  color: var(--dark-cyan);
 }
 
 /* CTA end */
