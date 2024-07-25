@@ -17,12 +17,15 @@
 /* Utility classes */
 .center-text {
   text-align: center;
-  font-size: 1.75rem;
-  line-height: 1.75;
+  line-height: 1.6;
 }
 
-.uppercase {
-  text-transform: uppercase;
+.title {
+  font-family: "Fraunces", serif;
+  color: var(--very-dark-blue);
+  font-weight: 900;
+  font-size: 3.5rem;
+  letter-spacing: 1.25px;
 }
 
 /* Project start */
@@ -36,6 +39,7 @@ body {
   height: 100%;
   font-family: "Barlow", sans-serif;
   font-weight: 600;
+  font-size: 1.13rem;
   color: var(--dark-grayish-blue);
   overflow-x: hidden;
 }
@@ -134,26 +138,40 @@ ul li {
 
 /* CTA start */
 
-.cta-title {
-  font-family: "Fraunces", serif;
-  color: var(--very-dark-blue);
-  font-weight: 700;
-  font-size: 3.25rem;
-}
-
 p {
-  margin: 2rem 3rem;
+  margin: 1rem 1.5rem;
+  font-size: 1.5rem;
 }
 .learn-btn {
-  font-size: 1.5rem;
-  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  color: var(--very-dark-blue);
+  text-decoration: underline solid 5px green;
 }
 
 .banner-card {
   position: relative;
 }
 
-.banner-title {
+.banner-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.banner-text {
+  position: absolute;
+  /* top: 65%; */
+  bottom: 10%;
+}
+.graphic h3 {
+  color: var(--dark-cyan);
+}
+
+.graphic p {
+  color: var(--dark-moderate-cyan);
+}
+.photo {
+  color: var(--dark-blue);
 }
 
 /* CTA end */
