@@ -24,7 +24,7 @@
   font-family: "Fraunces", serif;
   color: var(--very-dark-blue);
   font-weight: 900;
-  font-size: 3.5rem;
+  font-size: 3rem;
   letter-spacing: 1.25px;
 }
 
@@ -139,14 +139,21 @@ ul li {
 /* CTA start */
 
 p {
-  margin: 1rem 1.5rem;
+  /* margin: 1rem 1.5rem; */
   font-size: 1.5rem;
 }
 .learn-btn {
   font-family: "Fraunces", serif;
   font-weight: 700;
   color: var(--very-dark-blue);
-  text-decoration: underline solid 5px green;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1em;
+}
+.learn-btn-1 {
+  text-decoration-color: var(--soft-red);
+}
+.learn-btn-2 {
+  text-decoration-color: var(--yellow);
 }
 
 .banner-card {
@@ -160,15 +167,11 @@ p {
 
 .banner-text {
   position: absolute;
-  /* top: 65%; */
   bottom: 10%;
 }
-.graphic h3 {
-  color: var(--dark-cyan);
-}
 
-.graphic p {
-  color: var(--dark-moderate-cyan);
+.graphic {
+  color: var(--dark-cyan);
 }
 .photo {
   color: var(--dark-blue);
