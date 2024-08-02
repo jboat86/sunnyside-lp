@@ -28,6 +28,10 @@
   letter-spacing: 1.25px;
 }
 
+.container-padding {
+  padding: 3.15rem;
+}
+
 /* Project start */
 * {
   box-sizing: border-box;
@@ -139,15 +143,17 @@ ul li {
 /* CTA start */
 
 p {
-  /* margin: 1rem 1.5rem; */
   font-size: 1.5rem;
+  line-height: 1.5;
 }
+
 .learn-btn {
+  position: relative;
   font-family: "Fraunces", serif;
+  z-index: 2;
   font-weight: 700;
   color: var(--very-dark-blue);
-  text-decoration-line: underline;
-  text-decoration-thickness: 1em;
+  text-decoration: solid 0.35em underline;
 }
 .learn-btn-1 {
   text-decoration-color: var(--soft-red);
@@ -204,4 +210,4 @@ footer .socials {
 }
 /* footer end */
 
-/* Project start */
+/* Project end */
