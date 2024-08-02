@@ -4,7 +4,7 @@
   --yellow: hsl(51, 100%, 49%);
   --dark-cyan: hsl(167, 40%, 24%); /* graphic design text */
   --dark-blue: hsl(198, 62%, 26%); /* photography text */
-  --dark-moderate-cyan: hsl(168, 34%, 41%); /* footer */
+  --dark-moderate-cyan: hsl(168, 38%, 56%); /* footer */
 
   /* Neutral */
   --very-dark-blue: hsl(211, 28%, 19%);
@@ -15,6 +15,10 @@
 }
 
 /* Utility classes */
+.fw-600 {
+  font-weight: 600;
+}
+
 .center-text {
   text-align: center;
   line-height: 1.6;
@@ -42,7 +46,6 @@ html,
 body {
   height: 100%;
   font-family: "Barlow", sans-serif;
-  font-weight: 600;
   font-size: 1.13rem;
   color: var(--dark-grayish-blue);
   overflow-x: hidden;
@@ -65,7 +68,7 @@ button.navbar-toggler {
 
 .overlay {
   position: fixed;
-  padding: 2rem;
+  padding: 1.25rem;
   margin-top: 10.75rem;
   height: 500px;
   width: 500px;
@@ -75,7 +78,7 @@ button.navbar-toggler {
   transform: translate(-50%, -15%);
   background-color: var(--white);
 }
-
+/* needs reviewing! */
 .triangle {
   position: absolute;
   right: 6.72rem;
@@ -186,21 +189,69 @@ p {
 /* CTA end */
 
 /* testimonials start */
+.testimonials {
+  letter-spacing: 4px;
+  font-weight: 700;
+  color: var(--grayish-blue);
+}
 
 .testimonials-img {
   border-radius: 5rem;
   width: 100px;
 }
 
+.name {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  color: var(--very-dark-blue);
+  padding-top: 1.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.job-title {
+  font-size: 1.15rem;
+  padding-bottom: 1.75rem;
+  color: var(--grayish-blue);
+}
+
 /* testimonials end */
+
+/* Gallery start */
+.gallery-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.gallery {
+  width: 300px;
+}
+/* Gallery end*/
 
 /* footer start */
 
-footer .socials {
-  background-color: var(-dark-moderate-cyan);
-  color: var(-dark-cyan);
+footer {
+  display: flex;
+  justify-content: center;
+  height: 80%;
+  background-color: var(--dark-moderate-cyan);
+}
+.footer-logo {
+  padding: 3rem 2rem;
+  font-weight: 700;
+  color: var(--dark-cyan);
+}
+footer > ul > li > a {
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-decoration: none;
+  color: var(--dark-cyan);
 }
 
+ion-icon {
+  width: 30px;
+  height: 30px;
+  border: solid 2px red;
+  color: var(--dark-cyan);
+}
 .attribution {
   font-size: 11px;
   text-align: center;
