@@ -44,7 +44,7 @@
 }
 html,
 body {
-  height: 100%;
+  height: fit-content;
   font-family: "Barlow", sans-serif;
   font-size: 1.13rem;
   color: var(--dark-grayish-blue);
@@ -60,6 +60,7 @@ header {
 .navbar-brand {
   color: var(--white);
   font-size: 2rem;
+  font-weight: 700;
 }
 
 button.navbar-toggler {
@@ -81,7 +82,8 @@ button.navbar-toggler {
 /* needs reviewing! */
 .triangle {
   position: absolute;
-  right: 6.72rem;
+  right: 71.5px;
+  top: 100px;
   width: 0.5px;
   height: 25px;
   border-top: 30px solid transparent;
@@ -99,18 +101,17 @@ ul li {
 .nav-link {
   color: var(--dark-grayish-blue);
   font-size: 1.5rem;
+  font-weight: 600;
   padding: 2rem;
 }
 
 .contact {
   background-color: var(--yellow);
-  border-radius: 100px;
-  margin: 0 6rem 2rem 6rem;
+  border-radius: 65px;
+  padding: 0 2rem;
+  margin: 0 6rem;
   text-transform: uppercase;
   font-family: "Fraunces", serif;
-}
-
-.contact:hover {
   color: var(--very-dark-grayish-blue);
 }
 
@@ -228,30 +229,41 @@ p {
 
 /* footer start */
 
-footer {
-  display: flex;
-  justify-content: center;
-  height: 80%;
+.footer-container {
   background-color: var(--dark-moderate-cyan);
 }
+
 .footer-logo {
+  justify-self: center;
   padding: 3rem 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: var(--dark-cyan);
 }
-footer > ul > li > a {
-  flex-direction: row;
-  justify-content: space-evenly;
+footer ul {
+  display: flex;
+  justify-content: space-around;
+}
+footer ul li a {
   text-decoration: none;
+  padding: 2rem 0.5rem;
+
   color: var(--dark-cyan);
 }
 
-ion-icon {
+.socials {
+  flex-direction: row;
+}
+
+ion-icons {
   width: 30px;
   height: 30px;
   border: solid 2px red;
   color: var(--dark-cyan);
 }
+
+/* footer end */
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -259,6 +271,5 @@ ion-icon {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-/* footer end */
 
 /* Project end */
