@@ -44,7 +44,7 @@
 }
 html,
 body {
-  height: fit-content;
+  /* height: fit-content; */
   font-family: "Barlow", sans-serif;
   font-size: 1.13rem;
   color: var(--dark-grayish-blue);
@@ -223,7 +223,7 @@ p {
   grid-template-columns: 1fr 1fr;
 }
 .gallery {
-  width: 300px;
+  width: 290px;
 }
 /* Gallery end*/
 
@@ -231,11 +231,14 @@ p {
 
 .footer-container {
   background-color: var(--dark-moderate-cyan);
+  padding-bottom: 5rem;
+  border: 2px solid blue;
 }
 
 .footer-logo {
-  justify-self: center;
-  padding: 3rem 2rem;
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem 2rem;
   font-size: 2.5rem;
   font-weight: 700;
   color: var(--dark-cyan);
@@ -246,16 +249,12 @@ footer ul {
 }
 footer ul li a {
   text-decoration: none;
-  padding: 2rem 0.5rem;
-
+  padding: 1.25rem 0;
   color: var(--dark-cyan);
 }
 
-.socials {
-  flex-direction: row;
-}
-
-ion-icons {
+.socials-logo {
+  justify-content: space-between;
   width: 30px;
   height: 30px;
   border: solid 2px red;
