@@ -223,7 +223,7 @@ p {
   grid-template-columns: 1fr 1fr;
 }
 .gallery {
-  width: 290px;
+  width: 295px;
 }
 /* Gallery end*/
 
@@ -231,8 +231,9 @@ p {
 
 .footer-container {
   background-color: var(--dark-moderate-cyan);
-  padding-bottom: 5rem;
-  border: 2px solid blue;
+  width: min(800px, 100%);
+  margin: 0 auto;
+  padding-bottom: 6rem;
 }
 
 .footer-logo {
@@ -245,20 +246,20 @@ p {
 }
 footer ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 footer ul li a {
+  font-size: 1.5rem;
   text-decoration: none;
-  padding: 1.25rem 0;
   color: var(--dark-cyan);
 }
 
-.socials-logo {
-  justify-content: space-between;
-  width: 30px;
-  height: 30px;
-  border: solid 2px red;
+a .socials-logo {
+  width: 40px;
+  height: 40px;
+  /* border: solid 2px red; */
   color: var(--dark-cyan);
+  padding: 3rem 0.15rem 0 3rem;
 }
 
 /* footer end */
