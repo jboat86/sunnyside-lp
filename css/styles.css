@@ -15,15 +15,14 @@
 }
 
 /* Utility classes */
-.container-mobile {
-  /* position: relative; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  line-height: 1.6;
-  padding: 3rem 2.15rem;
-  border: 2px solid blue;
+/* adapted from responsiveness tutuorial slaying the dragon YT */
+
+.container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .fw-600 {
@@ -45,23 +44,20 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
 body {
   width: 100%;
   font-family: "Barlow", sans-serif;
   font-size: 1.13rem;
   color: var(--dark-grayish-blue);
-  overflow-x: hidden;
 }
 
 /* Nav start */
 
-.navbar-brand {
-  color: var(--white);
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-button.navbar-toggler {
+.navbar-toggler {
   border: none;
 }
 
@@ -69,31 +65,34 @@ button.navbar-toggler {
   position: fixed;
   padding: 1.25rem;
   margin-bottom: 20rem;
-  height: 525px;
-  width: 525px;
-  top: 50%;
+  height: 425px;
+  width: 425px;
+
+  /* top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+
   background-color: var(--white);
   z-index: 999;
 }
-/* needs reviewing! */
-.triangle {
-  position: absolute;
-  right: 55.5px;
-  top: 100px;
-  width: 0.5px;
-  height: 25px;
-  border-top: 30px solid transparent;
-  border-bottom: 5px solid transparent;
-  border-left: 40px solid var(--white);
-  rotate: -90deg;
+
+.nav-corner {
+  position: fixed;
+  top: 9.25rem;
+  right: 4.2rem;
+  width: 0;
+  height: 0;
+  border-top: 2.4rem solid transparent;
+  border-bottom: 2.4rem solid transparent;
+  border-right: 2.4rem solid white;
+  border: 2px solid red;
 }
 
 /* Overlay navbar*/
 ul li {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .nav-link {
@@ -116,17 +115,14 @@ ul li {
 /* Navbar end */
 
 /* Hero start */
-.creative {
-  background-position: center;
-  background-size: cover;
-}
 
 .hero-title {
   font-family: "Fraunces", serif;
   color: var(--white);
+  padding: 2rem 4.75rem;
   font-weight: 700;
   letter-spacing: 0.5rem;
-  font-size: 4.5rem;
+  font-size: clamp(2rem, 1rem + 10vw, 5rem);
   text-align: center;
   position: absolute;
   top: 30%;
@@ -139,7 +135,6 @@ ul li {
   right: 45%;
   height: 20%;
 }
-
 /* Hero end*/
 
 /* CTA start */
@@ -154,7 +149,6 @@ p {
   font-size: 1.25rem;
   font-weight: 900;
   color: var(--very-dark-blue);
-  /* opacity: ; */
 }
 
 .learn-btn-1 {
@@ -168,11 +162,6 @@ p {
   position: relative;
 }
 
-.img-mobile {
-  max-width: 100%;
-  height: auto;
-}
-
 .banner-text {
   position: absolute;
   bottom: 10%;
@@ -181,6 +170,7 @@ p {
 .graphic {
   color: var(--dark-cyan);
 }
+
 .photo {
   color: var(--dark-blue);
 }
@@ -216,14 +206,11 @@ p {
 /* testimonials end */
 
 /* Gallery start */
-.gallery-container {
+.item-gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 2fr;
 }
-.gallery {
-  width: 350px;
-  height: 350px;
-}
+
 /* Gallery end*/
 
 /* footer start */
@@ -231,25 +218,25 @@ p {
 .footer-container {
   background-color: var(--dark-moderate-cyan);
   width: min(800px, 100%);
-  padding: 2rem 0 2rem 0;
+  padding-bottom: 4rem;
 }
 
 .footer-logo {
   display: flex;
   justify-content: center;
   padding: 4.5rem 0 3rem 0;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 700;
   color: var(--dark-cyan);
 }
 footer ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 footer ul li a {
-  padding: 2rem 3.25rem 4rem 3.25rem;
   font-size: 1.75rem;
+  padding: 4rem 2.5rem;
   text-decoration: none;
   color: var(--dark-cyan);
 }
@@ -263,14 +250,72 @@ footer ul li a {
   width: 50px;
   height: 50px;
   color: var(--dark-cyan);
-  padding: 4rem 0 6rem 0;
+  padding: 4rem 0 4rem 0;
 }
 
 /* footer end */
 
-/* Desktop view*/
+/* screen sizes */
 
-.attribution {
+/* xs*/
+@media (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+  .desktop {
+    visibility: collapse;
+  }
+
+  /* Nav */
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .conatiner {
+    max-width: 640px;
+  }
+  .hero-desktop {
+    display: none;
+  }
+}
+/* md */
+@media (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+  .hero-mobile {
+    background-image: url(/assets/images/mobile/image-header.jpg);
+  }
+  img.desktop {
+    display: none;
+  }
+}
+/* l */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+  .hero-desktop {
+    background-image: url(/assets/images/desktop/image-header.jpg);
+    width: auto;
+  }
+  .hero-mobile {
+    display: none;
+  }
+}
+/* xl */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+/* 2xl */
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+*/ .attribution {
   font-size: 11px;
   text-align: center;
 }

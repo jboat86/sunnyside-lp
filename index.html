@@ -26,7 +26,7 @@
     <!-- Nav start -->
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top p-4">
-        <div class="container">
+        <div class="container-fluid">
           <a class="navbar-brand active logo" href="#">sunnyside</a>
           <button
             class="navbar-toggler"
@@ -64,7 +64,7 @@
                 </button>
               </ul>
             </section>
-            <div class="triangle"></div>
+            <div class="nav-corner"></div>
           </div>
         </div>
       </nav>
@@ -72,7 +72,7 @@
       <!-- hero start -->
 
       <img
-        class="mx-auto d-block img-fluid hero-img hero-desktop"
+        class="mx-auto d-block img-fluid hero-img mobile"
         src="./assets/images/mobile/image-header.jpg"
         alt="header-img"
       />
@@ -94,8 +94,8 @@
           alt="transform"
         />
 
-        <div class="container-mobile container-fluid">
-          <h3 class="cta-title title px-5 py-3">Transform your brand</h3>
+        <div class="container">
+          <h3 class="cta-title title">Transform your brand</h3>
           <p class="fw-600">
             We are a full-service creative agency specializing in helping brands
             grow fast. Engage your clients through compelling visuals that do
@@ -108,12 +108,12 @@
         </div>
 
         <img
-          class="img-fluid img-mobile img-desktop"
+          class="img-fluid img-mobile"
           src="./assets/images/mobile/image-stand-out.jpg"
           alt="stand-out"
         />
 
-        <div class="container-mobile container-fluid">
+        <div class="container">
           <h2 class="cta-title title px-2 py-3">
             Stand out to the right audience
           </h2>
@@ -135,7 +135,7 @@
             src="./assets/images/mobile/image-graphic-design.jpg"
             alt="graphic"
           />
-          <div class="banner-text container-mobile">
+          <div class="banner-text container">
             <h3 class="graphic title pb-4">Graphic design</h3>
             <p class="graphic fw-600 p-2">
               Great design makes you memorable. We deliver artwork that
@@ -151,7 +151,7 @@
             src="./assets/images/mobile/image-photography.jpg"
             alt="photography"
           />
-          <div class="banner-text container-mobile">
+          <div class="banner-text container">
             <h3 class="photo title pb-4">Photography</h3>
             <p class="photo px-2 fw-600">
               Increase your credibility by getting the most stunning,
@@ -162,7 +162,7 @@
       </section>
       <!-- CTA end-->
       <!-- Testimonials start-->
-      <section class="container-fluid container-mobile">
+      <section class="container">
         <h3 class="testimonials text-uppercase p-5">Client testimonials</h3>
         <img
           class="testimonials-img"
@@ -201,29 +201,53 @@
       <!-- Testimonials end-->
 
       <!-- Gallery start -->
-      <section class="gallery-container">
-        <img
-          class="gallery"
-          src="./assets/images/mobile/image-gallery-milkbottles.jpg"
-          alt="milk"
-        />
-
-        <img
-          class="gallery"
-          src="./assets/images/mobile/image-gallery-orange.jpg"
-          alt="orange"
-        />
-
-        <img
-          class="gallery"
-          src="./assets/images/mobile/image-gallery-cone.jpg"
-          alt="cone"
-        />
-        <img
-          class="gallery"
-          src="./assets/images/mobile/image-gallery-sugar-cubes.jpg"
-          alt="sugar"
-        />
+      <section class="container img-fluid">
+        <div class="wrapper">
+          <ul class="image-gallery">
+            <li class="item-gallery">
+              <picture>
+                <source media="(min-width: 992px)" />
+                <img
+                  src="./assets/images/mobile/image-gallery-milkbottles.jpg"
+                  width="375"
+                  height="375"
+                  alt="milk-bottles"
+                  class="image"
+                />
+              </picture>
+              <picture>
+                <source media="(min-width: 992px)" />
+                <img
+                  src="./assets/images/mobile/image-gallery-orange.jpg"
+                  width="375"
+                  height="375"
+                  alt="orange"
+                  class="image"
+                />
+              </picture>
+              <picture>
+                <source media="(min-width: 992px)" />
+                <img
+                  src="./assets/images/mobile/image-gallery-cone.jpg"
+                  width="375"
+                  height="375"
+                  alt="cone"
+                  class="image"
+                />
+              </picture>
+              <picture>
+                <source media="(min-width: 992px)" />
+                <img
+                  src="./assets/images/mobile/image-gallery-sugar-cubes.jpg"
+                  width="375"
+                  height="375"
+                  alt="sugar"
+                  class="image"
+                />
+              </picture>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!-- Gallery end -->
@@ -237,7 +261,7 @@
           <li><a href="#Services">Services</a></li>
           <li><a href="#Projects">Projects</a></li>
         </ul>
-        <div class="socials-container">
+        <div class="socials-container container-fluid">
           <a
             ><ion-icon
               class="socials-logo facebook"
