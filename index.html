@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -25,11 +25,12 @@
   <body>
     <!-- Nav start -->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top p-4">
-        <div class="container-fluid">
-          <a class="navbar-brand active logo" href="#">sunnyside</a>
-          <button
-            class="navbar-toggler"
+      
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top px-3 py-4">
+  <div class="container">
+    <a class="navbar-brand active logo" href="#">sunnyside</a>
+    <button
+            class="navbar-toggler hamburger"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarTogglerDemo02"
@@ -37,84 +38,82 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon "></span>
+           
           </button>
-
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <section class="overlay">
-              <i class="fa fa-window-close" aria-hidden="true"></i>
-
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#About"
-                    >About
-                    <li></li
-                  ></a>
-                </li>
+          
+    <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+       <i class="fa fa-window-close" aria-hidden="true"></i>
+      
+      <div class="overlay">
+        <div class="nav-corner"></div>
+      <ul class="navbar-nav ms-auto ">
+        <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#About">About</a></li>
                 <li class="nav-item">
                   <a class="nav-link" href="#Services">Services</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#Projects">Projects</a>
                 </li>
-                <button class="btn btn-warning contact">
+                <button class=" btn btn-warning contact">
                   <li class="nav-item">
                     <a class="nav-link" href="#Contact">Contact</a>
                   </li>
                 </button>
               </ul>
-            </section>
-            <div class="nav-corner"></div>
+            </div>
           </div>
         </div>
       </nav>
+
       <!-- Nav end -->
-      <!-- hero start -->
-
-      <img
-        class="mx-auto d-block img-fluid hero-img mobile"
-        src="./assets/images/mobile/image-header.jpg"
-        alt="header-img"
-      />
-
+      <!-- hero start --> <!-- change to mobile header -->
+<!-- work on this later -->
+<section class="hero">
+  <div class=" img-container hero-mobile hero-desktop"></div> 
+      </section>
+  
       <h1 class="hero-title px-3 text-uppercase">We are creatives</h1>
       <img
         class="arrow"
         src="./assets/images/icon-arrow-down.svg"
         alt="arrow"
       />
+      
+      
     </header>
     <!-- hero end-->
     <main>
       <!-- CTA start-->
-      <section>
+      <section class="cta" aria-labelledby="call to action section">
         <img
-          class="img-fluid"
+          class="img-fluid img-container"
           src="./assets/images/mobile/image-transform.jpg"
           alt="transform"
         />
 
-        <div class="container">
-          <h3 class="cta-title title">Transform your brand</h3>
-          <p class="fw-600">
+       <div class="cta-wrapper">
+          <h3 class="title pt-4 pb-2">Transform your brand</h3>
+          <p class=" px-5 fw-600">
             We are a full-service creative agency specializing in helping brands
             grow fast. Engage your clients through compelling visuals that do
             most of the marketing for you.
           </p>
 
-          <a class="text-uppercase learn-btn link-design learn-btn-1 pt-4"
+          <a class="text-uppercase learn-btn learn-btn-1 pt-4"
             >Learn more</a
           >
-        </div>
+       </div>
 
         <img
-          class="img-fluid img-mobile"
+          class="img-fluid img-container"
           src="./assets/images/mobile/image-stand-out.jpg"
           alt="stand-out"
         />
 
-        <div class="container">
-          <h2 class="cta-title title px-2 py-3">
+       <div class="cta-wrapper">
+          <h2 class="title pt-4 pb-2">
             Stand out to the right audience
           </h2>
 
@@ -124,17 +123,18 @@
             extend your brand in digital places.
           </p>
 
-          <a class="text-uppercase learn-btn link-design learn-btn-2 pt-4"
+          <a class="text-uppercase learn-btn learn-btn-2 pt-4"
             >Learn more</a
           >
-        </div>
+      </div>
 
         <div class="banner-card">
           <img
-            class="img-fluid img-mobile img-desktop"
+            class="img-fluid img-container "
             src="./assets/images/mobile/image-graphic-design.jpg"
             alt="graphic"
           />
+
           <div class="banner-text container">
             <h3 class="graphic title pb-4">Graphic design</h3>
             <p class="graphic fw-600 p-2">
@@ -147,7 +147,7 @@
 
         <div class="banner-card">
           <img
-            class="img-fluid"
+            class="img-fluid img-container"
             src="./assets/images/mobile/image-photography.jpg"
             alt="photography"
           />
@@ -162,7 +162,7 @@
       </section>
       <!-- CTA end-->
       <!-- Testimonials start-->
-      <section class="container">
+      <section class="container" aria-labelledby="client testimonials">
         <h3 class="testimonials text-uppercase p-5">Client testimonials</h3>
         <img
           class="testimonials-img"

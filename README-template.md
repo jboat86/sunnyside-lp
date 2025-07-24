@@ -16,13 +16,16 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+
 
 ## Overview
 
 ### The challenge
+Hello, everyone. My name is jennifer and i am an Aspiring front-end web developer. To push myself further, i have decided to take on an even bigger challenge to develop a whole landing page, as opposed to website components such as modals etc.
 
-Users should be able to:
+The aim of this challenge is to develop a landing page and get it looking close to the design as much as possible!
+
+Once the website is complete, users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
@@ -53,11 +56,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
@@ -81,6 +80,19 @@ A more simpler way of centering text:
   text-align: center;
 }
 ```
+centering an img such as the arrow seen on the hero page: 
+```css
+.arrow {
+  position: absolute;
+  padding-top: 5.75em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  height: 35%;
+}
+```
+i had to experiment with `transform: translate(-50%, -20%);` to ensure the arrow is in the position as shown in the design file. Although the arrow is meant to be centered using the absolute values of `top: 50%;` and `left: 50%;`, it was not in the center so i had to use the transform property to position it correctly.
+
 
 ### Continued development
 
@@ -89,10 +101,9 @@ improiving webpage responsiveness across all screen sizes
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [Conquering responsive layouts by Kevin Powell](https://courses.kevinpowell.co) - This course helped me gain an breadth of understanding in building responsive layouts using CSS grid and flexbox.
 - [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
@@ -100,8 +111,8 @@ improiving webpage responsiveness across all screen sizes
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
 - Twitter - [@yourusername](https://www.twitter.com/yourusername)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+
 
 ## Acknowledgments
 
-for a simpler way of centering text as shown above in learning section i give credit to youtuber luna music productions studio.
+I would like to thank the CSS evalgelist, Kevin Powell, for explaining CSS grid and flexbox in greater depth via his conqueing responsive layouts course and countless helpful Youtube videos. 
