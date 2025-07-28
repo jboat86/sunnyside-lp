@@ -16,14 +16,11 @@
 
 /* Utility classes */
 
-
+/* 
 .container {
   max-width: 100%;
-}
-/* .justify-content{
-  justify-items: center;
- 
 } */
+
 .fw-600 {
   font-weight: 600;
 }
@@ -32,36 +29,44 @@
   font-family: "Fraunces", serif;
   color: var(--very-dark-blue);
   font-weight: 900;
-  font-size: 3rem;
+  font-size: 4rem;
   letter-spacing: 1.25px;
-  padding: 0 6em;
 }
 
 .img-container{
-  width: 100%;
+ 
+  height: 100%;
   background-position: center;  /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
   
 }
 
+.center-text{
+  padding-bottom: 4em;
+  text-align: center; 
+  margin: 0 auto;
+}
+
 
 /* Project start */
+html{
+  scroll-behavior: smooth;
+
+
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-}
 body {
-  width: 100%;
+  max-width: 100%;
   font-family: "Barlow", sans-serif;
   font-size: 1.13rem;
   color: var(--dark-grayish-blue);
+
 }
 
 
@@ -75,6 +80,10 @@ body {
 .navbar-toggler {
   border: none;
 
+}
+
+.nav-desktop{
+  display: none;
 }
 
 /* Overlay navbar for mobile view*/
@@ -115,14 +124,14 @@ ul li  {
   color: var(--dark-grayish-blue);
   font-size: 1.5rem;
   font-weight: 600;
-  padding: 2rem;
+  padding: 2rem 0;
 }
 
 .contact {
   /* rectify later */
-  width: 200px;
-  border-radius:75px;
-  padding: 0 3em;
+  width: 130px;
+  border-radius: 60px;
+  padding: 0 0.75em;
   border: none;
   margin: 0 auto;
   text-transform: uppercase;
@@ -167,26 +176,43 @@ height: 100vh; /* You must set a specified height */
 
 /* CTA start */
 
-.cta-wrapper{
-  /* padding: 2em 3em; */
-  text-align: center; 
-  margin: 0 auto;
-}
+
 
  p {
   font-size: 1.5rem;
   line-height: 2.5rem;
   
-}
-
-.learn-btn {
-  font-family: "Fraunces", serif;
-  text-decoration: none;
-  font-size: 1.25rem;
-  font-weight: 900;
-  color: var(--very-dark-blue);
   
 }
+
+a{
+  font-family: "Fraunces", serif;
+  font-size: 1.25rem;
+  font-weight: 900;
+  text-decoration: none;
+  padding: 0 0 0.7rem;
+  color: var(--very-dark-blue);
+
+
+}
+
+.learn-btn { 
+position: relative;
+width: 90%;
+height: 0.7rem;
+transform: translateY(-0.7rem);
+z-index: -1;
+opacity: 0.5;
+border-radius: 0.5rem; 
+transition: all 0.5s ease;
+}
+
+.learn-btn:hover{
+  opacity: 1;
+  width: 100%;
+}
+
+
 
 
 .learn-btn-1 {
@@ -195,6 +221,8 @@ height: 100vh; /* You must set a specified height */
 .learn-btn-2 {
    border-bottom: 15px solid var(--soft-red);
 }
+
+
 
 .banner-card {
   position: relative;
@@ -220,11 +248,13 @@ height: 100vh; /* You must set a specified height */
   letter-spacing: 4px;
   font-weight: 700;
   color: var(--grayish-blue);
+  padding-bottom: 2em;
 }
 
 .testimonials-img {
   border-radius: 5rem;
   width: 100px;
+  
 }
 
 .name {
@@ -244,16 +274,17 @@ height: 100vh; /* You must set a specified height */
 /* testimonials end */
 
 /* Gallery start */
-.item-gallery {
+.gallery {
   display: grid;
-  grid-template-columns: 2fr 2fr;
+  grid-template-columns: 1fr 1fr;
+
 }
 
 /* Gallery end*/
 
 /* footer start */
 
-.footer-container {
+footer {
   background-color: var(--dark-moderate-cyan);
   width: min(800px, 100%);
   padding-bottom: 4rem;
@@ -297,21 +328,24 @@ footer ul li a {
 
 
 /* Desktop */
-@media (min-width: 993px) 
-/* 62em is equivalent to 992px */
-{
+@media (min-width: 900px) {
+
+  
+  
 
   /* nav */
   .overlay{
     display: none;
   }
+.nav-mobile{
+  display: none;
+}
 
-
-
-.navbar-desktop{
-    display: flex;
-    flex-direction: row;
-    color: black;
+.nav-desktop{
+  display: flex;
+  flex-direction: row;
+  color: var(--white);
+  justify-content: space-between;
   } 
 
   /* hero */
@@ -325,9 +359,52 @@ footer ul li a {
 
   .hero-desktop{
   background-image: url("/assets/images/desktop/image-header.jpg");
+  max-width: 100%;
+  display: block;
+ object-fit: cover;
   
   }
+
+  .arrow{
+  top: 45%;
+  height: 20%;
 }
+
+/* hero end */
+
+/* nav start */
+
+.nav-link{
+  color: var(--white);
+  font-weight: normal;
+}
+
+/* .contact{
+color: black;
+} */
+/* nav end */
+
+/* cta start */
+
+.cta-mobile{
+    display: none;
+  }
+
+  .cta-desktop{
+    display: flex;
+    flex-direction: row;
+  }
+
+/* cta end */
+
+/* testimonials start */
+/* testimonials end */
+
+/* gallery start */
+/* gallery end */
+
+/* footer start */
+/* footer end */
 
  .attribution {
   font-size: 11px;
@@ -335,6 +412,7 @@ footer ul li a {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
 }
 
 /* Project end */
