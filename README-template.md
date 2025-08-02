@@ -93,6 +93,54 @@ centering an img such as the arrow seen on the hero page:
 ```
 i had to experiment with `transform: translate(-50%, -20%);` to ensure the arrow is in the position as shown in the design file. Although the arrow is meant to be centered using the absolute values of `top: 50%;` and `left: 50%;`, it was not in the center so i had to use the transform property to position it correctly.
 
+/* .contact {
+  
+  width: 50px;
+  border-radius: 60px;
+  padding: 0 0.75em;
+  border: none;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  color: var(--very-dark-grayish-blue);
+} */
+
+/* .nav-link {
+  color: var(--dark-grayish-blue);
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 2rem 0;
+} */
+
+/* .hero-mobile{
+background-image: url("/assets/images/mobile/image-header.jpg");
+background-color: var(--yellow); 
+} */
+/* Used if the image is unavailable */
+
+
+/* .hero-title {
+  font-family: "Fraunces", serif;
+  color: var(--white);
+  padding-top: 0.5em;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  font-size: clamp(2rem, 1rem + 10vw, 5rem);
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+} */
+
+/* .arrow {
+  position: absolute;
+  padding-top: 3.75em;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  height: 35%;
+} */
 
 ### Continued development
 
